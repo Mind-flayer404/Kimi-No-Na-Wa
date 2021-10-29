@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    background-image: url("src/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+@media all and (max-width: 1300px){
+    body{
+        height: 90vh;
+    }
+}
+
+@media all and (max-width: 1150px){
+    body{
+        height: 100vh;
+    }
+}
+
+span{
+    position: absolute;
+    top: 0;
+    left: 75%;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 20px rgba(255,255,255,1);
+    animation: animate 2s linear infinite;
+}
+
+span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 2px;
+    background: linear-gradient(90deg,#fff,transparent);
+} 
+
+@keyframes animate{
+    0%{
+        transform: rotate(-45deg) translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-45deg) translateX(-700px);
+        opacity: 0;
+    }
+}
+
+span:nth-child(1){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(2){
+    top: 0;
+    left: 50%;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+
+span:nth-child(3){
+    top: 0;
+    left: 40%;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+
+span:nth-child(4){
+    top: 0;
+    left: 90%;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+
+span:nth-child(5){
+    top: 0;
+    left: 60%;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+
+span:nth-child(6){
+    top: 25%;
+    left: 100%;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+span:nth-child(7){
+    top: 0;
+    left: 25%;
+    animation-delay: 1.2s;
+    animation-duration: 2.75s;
+}
+
+span:nth-child(8){
+    top: 0;
+    left: 100%;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+
+span:nth-child(9){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(10){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(11){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(12){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(13){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(14){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
+
+span:nth-child(15){
+    top: 0;
+    left: 75%;
+    animation-duration: 4s;
+}
